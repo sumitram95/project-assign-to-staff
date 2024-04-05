@@ -78,7 +78,7 @@ class EmployeeController extends ErrorLogController
                 'status' => $validated['status']
             ]);
             $user->assignRole($validated['role']);
-            Mail::to($validated['email'])->send(new WelcomeEmail($user->id, $validated['full_name'], $position->position, $validated['status'], $user->getRoleNames()->first()));
+            // Mail::to($validated['email'])->send(new WelcomeEmail($user->id, $validated['full_name'], $position->position, $validated['status'], $user->getRoleNames()->first()));
             return redirect()->route('employee.index')->with('success', 'SuccessFully Saved');
         } catch (\Throwable $th) {
             return $this->logError($th);
