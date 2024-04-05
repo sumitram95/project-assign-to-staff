@@ -1,18 +1,10 @@
-# Ping CRM Svelte
-
-A demo application to illustrate how [Inertia.js](https://inertiajs.com/) works with [Laravel](https://laravel.com/) and [Svelte](https://svelte.dev/).
-
-> This is a port of the original [Ping CRM](https://github.com/inertiajs/pingcrm) written in Laravel and Vue.
-
-![](https://raw.githubusercontent.com/zgabievi/pingcrm-svelte/master/screenshot.png)
-
 ## Installation
 
 Clone the repo locally:
 
 ```sh
-git clone https://github.com/zgabievi/pingcrm-svelte.git
-cd pingcrm-svelte
+git clone https://github.com/sumitram95/project-assign-to-staff.git
+cd project-assign-to-staff
 ```
 
 Install PHP dependencies:
@@ -45,22 +37,10 @@ Generate application key:
 php artisan key:generate
 ```
 
-Create an SQLite database. You can also use another database (MySQL, Postgres), simply update your configuration accordingly.
-
-```sh
-touch database/database.sqlite
-```
-
 Run database migrations:
 
 ```sh
-php artisan migrate
-```
-
-Run database seeder:
-
-```sh
-php artisan db:seed
+php artisan db:reset
 ```
 
 Run artisan server:
@@ -69,22 +49,6 @@ Run artisan server:
 php artisan serve
 ```
 
-You're ready to go! [Visit Ping CRM](http://127.0.0.1:8000/) in your browser, and login with:
+- **Username:** admin@gmail.com
+- **Password:** 1234
 
-- **Username:** johndoe@example.com
-- **Password:** secret
-
-## Running tests
-
-To run the Ping CRM tests, run:
-
-```
-phpunit
-```
-
-## Credits
-
-- Original work by Jonathan Reinink (@reinink) and contributors
-- Port to Ruby on Rails by Georg Ledermann (@ledermann)
-- Port to React by Lado Lomidze (@landish)
-- Port to Svelte by Zura Gabievi (@zgabievi)
